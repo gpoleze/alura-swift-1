@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0B4ECAC2535649F00A0F254 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ECAB2535649F00A0F254 /* Refeicao.swift */; };
+		C0B4ECAF2535653500A0F254 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ECAE2535653500A0F254 /* Item.swift */; };
 		C0C4D62D252A7CCA00A2FDB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4D62C252A7CCA00A2FDB3 /* AppDelegate.swift */; };
 		C0C4D62F252A7CCA00A2FDB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4D62E252A7CCA00A2FDB3 /* SceneDelegate.swift */; };
 		C0C4D631252A7CCA00A2FDB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4D630252A7CCA00A2FDB3 /* ViewController.swift */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0AB613B252AB09900122EAA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C0B4ECAB2535649F00A0F254 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		C0B4ECAE2535653500A0F254 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C0C4D629252A7CC900A2FDB3 /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C4D62C252A7CCA00A2FDB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C4D62E252A7CCA00A2FDB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +42,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0B4ECB12535663800A0F254 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0B4ECAE2535653500A0F254 /* Item.swift */,
+				C0B4ECAB2535649F00A0F254 /* Refeicao.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0B4ECB22535666100A0F254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0C4D630252A7CCA00A2FDB3 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C0B4ECB32535667600A0F254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0C4D637252A7CCB00A2FDB3 /* LaunchScreen.storyboard */,
+				C0C4D632252A7CCA00A2FDB3 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C0C4D620252A7CC900A2FDB3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +89,11 @@
 			children = (
 				C0C4D62C252A7CCA00A2FDB3 /* AppDelegate.swift */,
 				C0C4D62E252A7CCA00A2FDB3 /* SceneDelegate.swift */,
-				C0C4D630252A7CCA00A2FDB3 /* ViewController.swift */,
-				C0C4D632252A7CCA00A2FDB3 /* Main.storyboard */,
+				C0B4ECB12535663800A0F254 /* Models */,
+				C0B4ECB22535666100A0F254 /* Controllers */,
+				C0B4ECB32535667600A0F254 /* Views */,
 				C0C4D635252A7CCB00A2FDB3 /* Assets.xcassets */,
-				C0C4D637252A7CCB00A2FDB3 /* LaunchScreen.storyboard */,
+				C0AB613B252AB09900122EAA /* MyPlayground.playground */,
 				C0C4D63A252A7CCB00A2FDB3 /* Info.plist */,
 			);
 			path = "eggplant-brownie";
@@ -137,9 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B4ECAF2535653500A0F254 /* Item.swift in Sources */,
 				C0C4D631252A7CCA00A2FDB3 /* ViewController.swift in Sources */,
 				C0C4D62D252A7CCA00A2FDB3 /* AppDelegate.swift in Sources */,
 				C0C4D62F252A7CCA00A2FDB3 /* SceneDelegate.swift in Sources */,
+				C0B4ECAC2535649F00A0F254 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
