@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0296C272536A46E00B23B0F /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0296C262536A46E00B23B0F /* RefeicoesTableViewController.swift */; };
 		C0B4ECAC2535649F00A0F254 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ECAB2535649F00A0F254 /* Refeicao.swift */; };
 		C0B4ECAF2535653500A0F254 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ECAE2535653500A0F254 /* Item.swift */; };
 		C0C4D62D252A7CCA00A2FDB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4D62C252A7CCA00A2FDB3 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0296C262536A46E00B23B0F /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 		C0AB613B252AB09900122EAA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C0B4ECAB2535649F00A0F254 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		C0B4ECAE2535653500A0F254 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				C0C4D630252A7CCA00A2FDB3 /* ViewController.swift */,
+				C0296C262536A46E00B23B0F /* RefeicoesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0B4ECAF2535653500A0F254 /* Item.swift in Sources */,
+				C0296C272536A46E00B23B0F /* RefeicoesTableViewController.swift in Sources */,
 				C0C4D631252A7CCA00A2FDB3 /* ViewController.swift in Sources */,
 				C0C4D62D252A7CCA00A2FDB3 /* AppDelegate.swift in Sources */,
 				C0C4D62F252A7CCA00A2FDB3 /* SceneDelegate.swift in Sources */,

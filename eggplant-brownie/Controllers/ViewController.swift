@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet var nomeTextField: UITextField?
     @IBOutlet var nivelFelicidadeTextField: UITextField?
     
+    var tableViewController: RefeicoesTableViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,7 +32,9 @@ class ViewController: UIViewController {
         let refeicao = Refeicao(nome: nome, felicidade: Int(felicidade))
         
         print("Alimento: \(refeicao.nome) Nível de felicidade \(refeicao.felicidade)")
-        
+     
+        tableViewController?.adiciona(refeicao)
+        navigationController?.popViewController(animated: true)
     }
     
 }
