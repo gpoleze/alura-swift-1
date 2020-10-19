@@ -12,17 +12,18 @@ class Refeicao: NSObject {
     
     let nome: String
     let felicidade: Int
-    let items: Array<Item> = []
+    let itens: Array<Item>
     
     // MARK: - Contrutor
-    init(nome:String, felicidade: Int) {
-        self.nome=nome
-        self.felicidade=felicidade
+    init(nome:String, felicidade: Int, itens: [Item] = []) {
+        self.nome = nome
+        self.felicidade = felicidade
+        self.itens = itens
     }
     
     // MARK: - Métodos
     func totoalDeCalorias() -> Int {
-        return items.reduce(0, { result, item in
+        return itens.reduce(0, { result, item in
             result + item.calorias
         })
     }
