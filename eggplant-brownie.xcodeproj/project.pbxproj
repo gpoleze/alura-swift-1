@@ -10,6 +10,7 @@
 		C0296C272536A46E00B23B0F /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0296C262536A46E00B23B0F /* RefeicoesTableViewController.swift */; };
 		C03A4A13253D14D500BF76BB /* AdicionaItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A4A11253D14D500BF76BB /* AdicionaItemViewController.swift */; };
 		C03A4A14253D14D500BF76BB /* AdicionaItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C03A4A12253D14D500BF76BB /* AdicionaItemViewController.xib */; };
+		C03A4A19253D248300BF76BB /* AdicionaItemsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A4A18253D248300BF76BB /* AdicionaItemsDelegate.swift */; };
 		C0B4ECAC2535649F00A0F254 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ECAB2535649F00A0F254 /* Refeicao.swift */; };
 		C0B4ECAF2535653500A0F254 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4ECAE2535653500A0F254 /* Item.swift */; };
 		C0C4D62D252A7CCA00A2FDB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4D62C252A7CCA00A2FDB3 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 		C0296C262536A46E00B23B0F /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 		C03A4A11253D14D500BF76BB /* AdicionaItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionaItemViewController.swift; sourceTree = "<group>"; };
 		C03A4A12253D14D500BF76BB /* AdicionaItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionaItemViewController.xib; sourceTree = "<group>"; };
+		C03A4A18253D248300BF76BB /* AdicionaItemsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionaItemsDelegate.swift; sourceTree = "<group>"; };
 		C0AB613B252AB09900122EAA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C0B4ECAB2535649F00A0F254 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		C0B4ECAE2535653500A0F254 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				C0C4D630252A7CCA00A2FDB3 /* ViewController.swift */,
 				C0296C262536A46E00B23B0F /* RefeicoesTableViewController.swift */,
 				C03A4A11253D14D500BF76BB /* AdicionaItemViewController.swift */,
+				C03A4A18253D248300BF76BB /* AdicionaItemsDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				C0B4ECAF2535653500A0F254 /* Item.swift in Sources */,
 				C0296C272536A46E00B23B0F /* RefeicoesTableViewController.swift in Sources */,
 				C0C4D631252A7CCA00A2FDB3 /* ViewController.swift in Sources */,
+				C03A4A19253D248300BF76BB /* AdicionaItemsDelegate.swift in Sources */,
 				C0C4D62D252A7CCA00A2FDB3 /* AppDelegate.swift in Sources */,
 				C03A4A13253D14D500BF76BB /* AdicionaItemViewController.swift in Sources */,
 				C0C4D62F252A7CCA00A2FDB3 /* SceneDelegate.swift in Sources */,

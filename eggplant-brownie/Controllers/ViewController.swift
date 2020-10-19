@@ -11,11 +11,12 @@ protocol AdicionaRefeicoesDelegate {
     func adiciona(_ refeicao: Refeicao)
 }
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AdicionaItemsDelegate {
     
     // MARK: - IBOUtlets
     @IBOutlet var nomeTextField: UITextField?
     @IBOutlet var nivelFelicidadeTextField: UITextField?
+    @IBOutlet var itensTableView: UITableView?
     
     // MARK: - Atributos
     var delegate: AdicionaRefeicoesDelegate?
@@ -26,13 +27,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     ]
     var itensSelecionados: [Item] = []
     
-    // MARK: - Overrides AdicionaRefeicoesDelegate
+    // MARK: - View Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let botaoAdicionaItem = UIBarButtonItem(title: "Adicionar", style: .plain, target: self, action: #selector(self.adicionarItem))
+        navigationItem.rightBarButtonItem = botaoAdicionaItem
     }
     
-    // MARK: - IBActions
+    @objc func adicionarItem() {
+        let adicionaItemViewController = AdicionaItemViewController(delegate: self)
+        navigationController?.pushViewController(adicionaItemViewController, animated: true)
+    }
+    
+    // MARK: - Overrides AdicionaRefeicoesDelegate
     @IBAction func adicionar(_ sender: Any) {
         guard let nome = nomeTextField?.text else {
             print("O nome da refeição estå nulo")
@@ -78,6 +86,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             celula.accessoryType = .none
             itensSelecionados.removeAll(where: {$0.nome == item.nome})
         }
+    }
+    
+    // Mark - Overrides AdicionaItemsDelegate
+    func adicionar(_ item: Item) {
+        itens.append(item)
+        itensTableView?.reloadData()
     }
 }
 

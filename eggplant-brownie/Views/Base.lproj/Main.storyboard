@@ -68,6 +68,7 @@ RW50cmUgdW0gbhAQw7ptZXJvIGVudHJlIDEgZSA1A
                     </view>
                     <navigationItem key="navigationItem" id="XiI-fU-sV9"/>
                     <connections>
+                        <outlet property="itensTableView" destination="aj9-Ac-VMO" id="oSr-Z5-DAs"/>
                         <outlet property="nivelFelicidadeTextField" destination="k1B-Z5-E0b" id="D3k-OQ-oCo"/>
                         <outlet property="nomeTextField" destination="Xw2-wx-jVq" id="RM6-SK-nEK"/>
                     </connections>
